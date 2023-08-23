@@ -1,0 +1,24 @@
+.container{
+    background-color: red;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    padding: 10px;
+    position: fixed;
+    z-index: 30;
+  
+}
+.container .same a{
+   text-decoration: none;
+   margin: 0px 40px;
+   font-size: 20px;
+}
+.left{
+    margin-left: 50px;
+}
+.right{
+    margin-right: 50px;
+}

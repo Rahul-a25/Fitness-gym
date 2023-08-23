@@ -1,0 +1,18 @@
+.skill-container{
+    border: 2px solid black;
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skill-container img{
+    width: 500px;
+    height: 300px;
+
+}
+.content-wala{
+    border: 2px solid gray;
+    width: 50%;
+    text-align: start;
+}
