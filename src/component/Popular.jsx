@@ -14,7 +14,7 @@ const Popular = () => {
              <span>MENTOR:Rahul Arora</span>
         </div>
 
-        <Link to='/course'><button className='popular-btn'>SEE ALL OUR COURSES</button></Link>
+        <Link to='/course'><button className='popular-btn font-style'>SEE ALL OUR COURSES</button></Link>
     </div>
   )
 }

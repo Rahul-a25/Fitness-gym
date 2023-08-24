@@ -1,0 +1,131 @@
+.contact-container .img {
+    background-size: cover;
+    position: relative;
+   
+}
+.contact-container .img::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.8
+}
+.contact-section{
+    width: 60%;
+    /* border: 2px solid red; */
+    margin: 30px auto;
+}
+.contact-section .input-first{
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    gap: 20px;
+    
+}
+.input-first input{
+    box-shadow: none;
+    height: 50px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+}
+.text-area{
+    width: 100%;
+    margin-top: 10px;
+   
+}
+.text-area textarea{
+    /* padding: 0.375rem 0.75rem; */
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    overflow: auto;
+    resize: vertical;
+    width: 99%;
+    
+    
+}
+
+.btn{
+    margin: auto;
+}
+.btn button{
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 18px 35px;
+    text-transform: uppercase;
+    border-radius: 0;
+    font-weight: 700;
+    transition: all 0.5s ease;
+    border: 1px solid transparent;
+    background: linear-gradient(90deg, #f5634b 0%, #fe9418 100%);
+    color: #fff;
+    cursor: pointer;
+    width: 200px;
+}
+.lower-section{
+    width: 100%;
+    background-color: #dfe1e4;
+    height: 350px;
+
+
+}
+.content-change-font{
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.8;
+
+}
+
+.box-section{
+   
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    position: absolute;
+    top: 1350px;
+    left: 250px;
+}
+.same-box{
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+    margin-right: 10px;
+    background-color: white;
+}
+.inner-box{
+    margin-top: 40px;
+
+}
+.footer{
+    margin-top: 250px;
+}
+.contact-font{
+    font-size: 15px;
+    font-weight: 400;
+    word-wrap: break-word;
+    
+}
+.same-box .inner-box .content p{
+    font-size: 1.25rem;
+    font-weight: 300;
+   
+}

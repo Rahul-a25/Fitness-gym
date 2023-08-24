@@ -13,11 +13,11 @@ const UpperBox = () => {
         <Navbar/>
         <div className='mid-content'>
             <div className='mid-text font'>
-            <span style={{color:"white"}}>GYM FITNESS CLUB</span>
-            <h1>STEP UP YOUR <br />FITNESS CHALLENGE <br />With US</h1>
+            <span style={{color:"white "}} className='font-style spanwala '>GYM FITNESS CLUB</span>
+            <h1 className='font-style' style={{color:"white"}}>STEP UP YOUR <br /><span className='color'>FITNESS CHALLENGE</span> <br />With US</h1>
             </div>
              <div className="btn-wala-content">
-                <button className='btn'>JOIN US</button>
+                <button className='btn font-style'>JOIN US</button>
              </div>
         </div>
 

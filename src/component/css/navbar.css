@@ -1,5 +1,5 @@
 .container{
-    background-color: red;
+    background-color: rgb(81, 80, 80);
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -15,6 +15,7 @@
    text-decoration: none;
    margin: 0px 40px;
    font-size: 20px;
+   color: white;
 }
 .left{
     margin-left: 50px;

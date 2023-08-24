@@ -1,7 +1,7 @@
 .skill-container{
-    border: 2px solid black;
+  
     width: 80%;
-    margin: 10px auto;
+    margin: 30px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,7 +12,20 @@
 
 }
 .content-wala{
-    border: 2px solid gray;
+    
     width: 50%;
     text-align: start;
+    margin-bottom: 20px;
+}
+.content-wala .span-wala {
+line-height: 1.8;
+margin-top: 10px;
+word-wrap: break-word;
+color:#757778
+}
+.btn-content {
+    width: 200px;
+    padding: 20px 20px;
+    font-size: 22px;
+    margin-top: 20px;
 }

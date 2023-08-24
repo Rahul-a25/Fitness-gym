@@ -5,12 +5,12 @@ import { useNavigate } from 'react-router-dom'
 import '../css/sameBg.css'
 import { mycontext } from '../context/context'
 
-const Chest = () => {
+const Waist = () => {
     const navigate=useNavigate()
     const {AllData} =useContext(mycontext)
   return (
     <div>
-           <div className='img' style={{   backgroundImage: `url(${bg})`, backgroundSize: 'cover',
+          <div className='img' style={{   backgroundImage: `url(${bg})`, backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         height: '400px'}}></div>
@@ -18,12 +18,12 @@ const Chest = () => {
           {/* navigate-wala-part */}
           <div className="navigate-wala">
               <div className="navigate">
-              <p onClick={()=>navigate('/')} className='navigate-home'>HOME</p> <b >|</b><p style={{marginLeft:"20px",fontSize:"20px",color:"#ff4757"}}>CHEST</p>
+              <p onClick={()=>navigate('/')} className='navigate-home'>HOME</p> <b >|</b><p style={{marginLeft:"20px",fontSize:"20px",color:"#ff4757"}}>WAIST</p>
               </div>
-              <h1 style={{color:"white",fontSize:"60px",margin:"0"}}>CHEST EXCERCISE</h1>
+              <h1 style={{color:"white",fontSize:"60px",margin:"0"}}>WAIST EXCERCISES</h1>
           </div>
           < hr className='hr' />
-               <h1>CHEST</h1>
+               <h1>WAIST</h1>
            {/* card-wala-section */}
            <div className='exer-card'>
               <div className="card-main">
@@ -48,4 +48,4 @@ const Chest = () => {
   )
 }
 
-export default Chest
+export default Waist

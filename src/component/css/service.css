@@ -31,10 +31,11 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #FAD961;
-    background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);
+    background-color: #EA5455;
+    background-image: linear-gradient(90deg, #FEB692 0%, #EA5455 100%);
     
-    
+    /* #FEB692
+#EA5455 */
     z-index: -1;
     transition: transform 0.9s;
     transform-origin: 0 0;
@@ -44,6 +45,7 @@
 .box .same:hover::before{
     transform: scaleY(1);
     cursor: pointer;
+    
 }
 .weight{
     border: 2px solid red;
@@ -51,11 +53,20 @@
 .cycle{
     border: 2px solid gray;
 }
-.yoga{
-    border: 2px solid gold;
-}
+
 .center-same{
-    border: 2px solid red;
+   
     margin-top: 50px;
    
+}
+.center-same h1{
+   font-size: 20px;
+  
+}
+.icon-wala{
+    font-size: 100px;
+    color: #f39c12;
+}
+.same:hover{
+    color: white;
 }

@@ -13,6 +13,8 @@ import Shoulders from './component/BodyParts/Shoulders';
 import UpperArms from './component/BodyParts/UpperArms';
 import UpperLegs from './component/BodyParts/UpperLegs';
 import LowerLegs from './component/BodyParts/LowerLegs';
+import Waist from './component/BodyParts/Waist';
+import Contact from './component/Contact';
 
 
 
@@ -34,6 +36,8 @@ function App() {
         <Route path='/upperarms' element={<UpperArms/>}/>
         <Route path='/upperlegs' element={<UpperLegs/>}/>
         <Route path='/lowerlegs' element={<LowerLegs/>}/>
+        <Route path='/waist' element={<Waist/>}/>
+        <Route path='/contact' element={<Contact/>}/>
       </Routes>
       
       {/* <Course/> */}

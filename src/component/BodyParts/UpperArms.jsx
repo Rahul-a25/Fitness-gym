@@ -18,12 +18,12 @@ const UpperArms = () => {
           {/* navigate-wala-part */}
           <div className="navigate-wala">
               <div className="navigate">
-              <p onClick={()=>navigate('/')} className='navigate-home'>HOME</p> <b >|</b><p style={{marginLeft:"20px",fontSize:"20px",color:"#ff4757"}}>SHOULDERS</p>
+              <p onClick={()=>navigate('/')} className='navigate-home'>HOME</p> <b >|</b><p style={{marginLeft:"20px",fontSize:"20px",color:"#ff4757"}}>ARM'S</p>
               </div>
-              <h1 style={{color:"white",fontSize:"60px",margin:"0"}}>SHOULDERS EXCERCISE</h1>
+              <h1 style={{color:"white",fontSize:"60px",margin:"0"}}>UPPER ARM'S EXCERCISES</h1>
           </div>
           < hr className='hr' />
-               <h1>CARDIO</h1>
+               <h1>UPPER ARM'S</h1>
            {/* card-wala-section */}
            <div className='exer-card'>
               <div className="card-main">

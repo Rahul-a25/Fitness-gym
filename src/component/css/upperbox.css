@@ -24,7 +24,7 @@
 }
 .mid-content{
     display: flex;
-    border: 2px solid red;
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -45,7 +45,7 @@
     font-weight: 700;
 }
 
-.mid-text span{
+.mid-text .spanwala{
     text-align: start;
     border: 2px solid white;
     font-size: 20px;

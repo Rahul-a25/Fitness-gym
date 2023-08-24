@@ -23,7 +23,7 @@ const LowerArms = () => {
               <h1 style={{color:"white",fontSize:"60px",margin:"0"}}>LOWER ARM'S EXCERCISE</h1>
           </div>
           < hr className='hr' />
-               <h1>CARDIO</h1>
+               <h1>LOWER ARM'S</h1>
            {/* card-wala-section */}
            <div className='exer-card'>
               <div className="card-main">
