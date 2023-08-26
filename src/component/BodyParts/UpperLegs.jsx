@@ -4,10 +4,14 @@ import bg from './Assest/course-bg.jpg'
 import { useNavigate } from 'react-router-dom'
 import '../css/sameBg.css'
 import { mycontext } from '../context/context'
+import { useSelector } from 'react-redux'
 
 const UpperLegs = () => {
     const navigate=useNavigate()
-    const {AllData} =useContext(mycontext)
+    // const {AllData} =useContext(mycontext)
+    const Data=useSelector((storeData)=>{
+      return storeData.AllData
+    })
   return (
     <div>
            <div className='img' style={{   backgroundImage: `url(${bg})`, backgroundSize: 'cover',
@@ -28,7 +32,7 @@ const UpperLegs = () => {
            <div className='exer-card'>
               <div className="card-main">
                  {
-                    AllData.map((e)=>{
+                    Data.map((e)=>{
                         return(
                             <div key={e.id} className="card">
                             <img  src={e.gifUrl} alt="" />

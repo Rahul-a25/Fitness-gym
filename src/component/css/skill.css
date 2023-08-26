@@ -26,6 +26,11 @@ color:#757778
 .btn-content {
     width: 200px;
     padding: 20px 20px;
-    font-size: 22px;
+    font-size: 25px;
     margin-top: 20px;
+    background: linear-gradient(90deg, #ff4757 0%, #F597BC 100%);
+    border: none;
+    color: white;
+    cursor: pointer;
+
 }

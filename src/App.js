@@ -15,6 +15,7 @@ import UpperLegs from './component/BodyParts/UpperLegs';
 import LowerLegs from './component/BodyParts/LowerLegs';
 import Waist from './component/BodyParts/Waist';
 import Contact from './component/Contact';
+import About from './component/About';
 
 
 
@@ -25,6 +26,7 @@ function App() {
       {/* <Navbar/> */}
       <Routes>
         <Route path='/' element={<Home/>}/>
+        <Route path='/about' element={<About/>}/>
         <Route path='/course' element={<Course/>}/>
         <Route path='/trainer' element={<Trainer/>}/>
         <Route path='/exercise' element={<ALLExercise/>}/>

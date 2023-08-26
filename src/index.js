@@ -5,13 +5,19 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import CustomContext from './component/context/context';
+import { Provider } from 'react-redux';
+import mystore from './component/Redux/store';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <CustomContext>
+  // <CustomContext>
+    
   <BrowserRouter>
+  <Provider store={mystore}>
     <App />
+    </Provider>
     </BrowserRouter>
-   </CustomContext>
+   
+  //  </CustomContext>
   
 );
 

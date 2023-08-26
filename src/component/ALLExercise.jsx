@@ -1,17 +1,21 @@
-import React, { useContext, useEffect } from 'react'
+import React from 'react'
 import './css/allexercise.css'
 import bg from '../Assest/course-bg.jpg'
-import getAllData from './ApisFolder/AllData'
-import { mycontext } from './context/context'
 import Navbar from './Navbar'
 import { useNavigate } from 'react-router-dom'
+import {  useSelector } from 'react-redux'
 
 const ALLExercise = () => {
     const navigate=useNavigate()
-    const {AllData,SetAllData,SetFilterData,FilterData} =useContext(mycontext)
-    useEffect(()=>{
-        getAllData(SetAllData,SetFilterData)
-    },[])
+    // const {AllData,SetAllData,SetFilterData,FilterData} =useContext(mycontext)
+    // const dispatch=useDispatch()
+    // useEffect(()=>{
+    //   // SetAllData,SetFilterData
+    //     getAllData(dispatch)
+    // },[])
+    const Data=useSelector((storeData)=>{
+      return storeData.FilterData
+    })
   return (
     <div className='exer-container'>
          <div className='img' style={{   backgroundImage: `url(${bg})`, backgroundSize: 'cover',
@@ -22,16 +26,16 @@ const ALLExercise = () => {
           {/* navigate-wala-part */}
           <div className="navigate-wala">
               <div className="navigate">
-              <p onClick={()=>navigate('/')} className='navigate-home'>HOME</p> <b >|</b><p style={{marginLeft:"20px",fontSize:"20px",color:"#ff7f50"}}>EXERCISES PART</p>
+              <p onClick={()=>navigate('/')} className='navigate-home font-style'>HOME</p> <b >|</b><p style={{marginLeft:"20px",fontSize:"20px",color:"#ff7f50"}} className='font-style'>EXERCISES PART</p>
               </div>
-              <h1 style={{color:"white",fontSize:"60px",margin:"0"}}>EXERCISES</h1>
+              <h1 style={{color:"white",fontSize:"60px",margin:"0"}} className='font-style'>EXERCISES</h1>
           </div>
-          <button onClick={()=>{SetAllData(FilterData.filter((e)=>e.bodyPart==='cardio'))}}>Cardio</button>
+          
           {/* card-wala */}
           <div className='exer-card'>
               <div className="card-main">
                  {
-                    AllData.map((e)=>{
+                    Data.map((e)=>{
                         return(
                             <div key={e.id} className="card">
                             <img  src={e.gifUrl} alt="" />

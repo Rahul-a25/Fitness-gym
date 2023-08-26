@@ -55,5 +55,11 @@
 
     
 }
+.btn-main{
+    background: linear-gradient(90deg, #ff4757 0%, #F597BC 100%);
+    border: none;
+    font-size: 25px;
+    color: white;
+}
 
 

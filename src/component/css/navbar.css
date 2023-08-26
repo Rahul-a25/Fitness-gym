@@ -1,25 +1,96 @@
 .container{
     background-color: rgb(81, 80, 80);
+    background-color: #181a23;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: absolute;
     top: 0px;
-    padding: 10px;
+    padding: 15px;
     position: fixed;
     z-index: 30;
   
 }
 .container .same a{
    text-decoration: none;
-   margin: 0px 40px;
-   font-size: 20px;
+   /* margin: 0px 40px; */
+   font-size: 18px;
    color: white;
+}
+.container .same a:hover{
+    color: #ff4757;
+}
+.container .nav-wala{
+    margin: 0px 40px;
 }
 .left{
     margin-left: 50px;
 }
 .right{
     margin-right: 50px;
+}
+/* .experince-section:hover .exp-child {
+     display:block ;
+     border: 2px solid red;
+} */
+#experince-section ul  {
+   list-style-type: none;
+   display: flex;
+   flex-direction: column;
+  
+}
+.exp-child{
+   
+    display: flex;
+    justify-content: flex-start;
+}
+#experince-section ul .li-wala {
+   font-size: 18px;
+   text-align: start;
+   margin-top:10px ;
+  
+   justify-content: flex-start;
+   display: flex;
+   flex-direction: column;
+    
+ }
+ 
+#experince-section {
+     /* border:  2px solid rgb(42, 12, 214);
+    width: 15%;
+    
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 820px;
+    background: #1c1c1c; *
+    /* height: 100%; */
+    /* background-color: red;  */
+    /* border: 2px solid red; */
+
+       display: none;
+
+    
+}
+/* .exp-child{
+    display: none;
+} */
+#exp-do:hover #experince-section{
+    display: block;
+    width: 15%;
+    position: absolute;
+    top: 0px;
+    margin-top: 50px;
+    left: 820px;
+    margin-left: 35px;
+    background: #1c1c1c;
+}
+    
+    /* font-size: 50px; */
+    
+
+#experince-section:hover{
+    top: 0;
+    display: block;
 }

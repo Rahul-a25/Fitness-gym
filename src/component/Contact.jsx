@@ -41,10 +41,10 @@ const Contact = () => {
                     </div>
 
                     <div className="text-area">
-                         <textarea className='font-style' name="" id="" cols="30" rows="10"></textarea>
+                         <textarea placeholder='Message' className='font-style' name="" id="" cols="30" rows="10"></textarea>
                     </div>
                     <div className="btn">
-                        <button className='font-style'>SEND MESSAGE</button>
+                        <button style={{backgroundColor:"#ff4757"}} className='font-style'>SEND MESSAGE</button>
                     </div>
 
 

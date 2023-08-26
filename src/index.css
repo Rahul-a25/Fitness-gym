@@ -43,3 +43,11 @@ font-family: 'Varela Round', sans-serif;
 .color{
   color: #ff4757;
 }
+.btn-shadow{
+  background: linear-gradient(90deg, #ff4757 0%, #F597BC 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 400;
+}

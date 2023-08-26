@@ -8,44 +8,52 @@ import { BiTime } from "react-icons/bi";
 import { useNavigate } from 'react-router-dom'
 import Footer from './Footer'
 import { mycontext } from './context/context'
+import { useDispatch, useSelector } from 'react-redux'
+import { Body,Cardio, Chest, LowerArms, Lowerlegs, Shoulders, UpperArms, Upperlegs, Waist } from './Redux/action'
+// import UpperLegs from './BodyParts/UpperLegs'
+// import LowerLegs from './BodyParts/LowerLegs'
 const Course = () => {
+     const dispatch=useDispatch()
      const navigate = useNavigate()
-     const { SetAllData, FilterData } = useContext(mycontext)
+     // const { SetAllData, FilterData } = useContext(mycontext)
+     const Data=useSelector((storeData)=>{
+          return storeData.FilterData
+     })
      const back = () => {
-          SetAllData(FilterData.filter((e)=>e.bodyPart==='back'))
-
+          // SetAllData(FilterData.filter((e)=>e.bodyPart==='back'))
+          dispatch(Body(Data))
           navigate('/back')
      }
      const cardio=()=>{
-          SetAllData(FilterData.filter((e)=>e.bodyPart==='cardio'))
+          dispatch(Cardio(Data))
           navigate('/cardio')
      }
      const chest=()=>{
-          SetAllData(FilterData.filter((e)=>e.bodyPart==='chest'))
+          dispatch(Chest(Data))
           navigate('/chest')
      }
      const lowerarms=()=>{
-          SetAllData(FilterData.filter((e)=>e.bodyPart==='lower arms'))
+          dispatch(LowerArms(Data))
           navigate('/lowerarms')
      }
      const shoulders=()=>{
-          SetAllData(FilterData.filter((e)=>e.bodyPart==='shoulders'))
+          dispatch(Shoulders(Data))
           navigate('/shoulders')
      }
      const upperarms=()=>{
-          SetAllData(FilterData.filter((e)=>e.bodyPart==='upper arms'))
+         dispatch(UpperArms(Data))
           navigate('/upperarms')
      }
      const upperlegs=()=>{
-          SetAllData(FilterData.filter((e)=>e.bodyPart==='upper legs'))
+          dispatch(Upperlegs(Data))
           navigate('/upperlegs')
      }
      const lowerlegs=()=>{
-          SetAllData(FilterData.filter((e)=>e.bodyPart==='lower legs'))
+          dispatch(Lowerlegs(Data))
           navigate('/lowerlegs')
      }
      const waist=()=>{
-          SetAllData(FilterData.filter((e)=>e.bodyPart==='waist'))
+        dispatch(Waist(Data))
           navigate('/waist')
      }
      return (
@@ -75,7 +83,7 @@ const Course = () => {
                               <span className='font-style'><b>Exercise Name </b>:Back</span>
                               <p className='font-style' >Trainer :Pankaj Jaiswal</p>
                               <p className='font-style'> <span style={{ margin: "10px 5px 0px 0px " }}>< BiTime style={{ color: "red" }} /></span>Monday-Tuesday : 7am-12pm</p>
-                              <button onClick={back} className='btn-course font-style'>See Back Exercises</button>
+                              <button onClick={back} className='btn-course btn-shadow font-style'>See Back Exercises</button>
                          </div>
                     </div>
                     <div className="same-body cardio">
@@ -84,7 +92,7 @@ const Course = () => {
                               <span className='font-style' ><b>Exercise Name </b>:Cardio</span>
                               <p className='font-style' >Trainer :Pankaj Jaiswal</p>
                               <p className='font-style'> <span style={{ margin: "10px 5px 0px 0px " }}>< BiTime style={{ color: "red" }} /></span>Monday-Tuesday : 7am-12pm</p>
-                              <button onClick={cardio} className='btn-course font-style'>See Cardio Exercises</button>
+                              <button onClick={cardio} className='btn-course btn-shadow font-style'>See Cardio Exercises</button>
                          </div>
                     </div>
                     <div className="same-body chest">
@@ -93,7 +101,7 @@ const Course = () => {
                               <span className='font-style' ><b>Exercise Name </b>:Chest</span>
                               <p className='font-style' >Trainer :Pankaj Jaiswal</p>
                               <p className='font-style'> <span style={{ margin: "10px 5px 0px 0px " }}>< BiTime style={{ color: "red" }} /></span>Monday-Tuesday : 7am-12pm</p>
-                              <button onClick={chest} className='btn-course font-style'>See Chest Exercises</button>
+                              <button onClick={chest} className='btn-course btn-shadow font-style'>See Chest Exercises</button>
                          </div>
                     </div>
                     <div className="same-body lowerarms">
@@ -102,7 +110,7 @@ const Course = () => {
                               <span className='font-style' ><b>Exercise Name </b>:Lower arms</span>
                               <p className='font-style' >Trainer :Pankaj Jaiswal</p>
                               <p className='font-style'> <span style={{ margin: "10px 5px 0px 0px " }}>< BiTime style={{ color: "red" }} /></span>Monday-Tuesday : 7am-12pm</p>
-                              <button onClick={lowerarms} className='btn-course font-style'>See Lower-Arms Exercises</button>
+                              <button onClick={lowerarms} className='btn-course btn-shadow font-style'>See Lower-Arms Exercises</button>
                          </div>
                     </div>
                     <div className="same-body lowerlegs">
@@ -111,7 +119,7 @@ const Course = () => {
                               <span  className='font-style'><b>Exercise Name </b>:Lower legs</span>
                               <p className='font-style' >Trainer :Pankaj Jaiswal</p>
                               <p className='font-style'> <span style={{ margin: "10px 5px 0px 0px " }}>< BiTime style={{ color: "red" }} /></span>Monday-Tuesday : 7am-12pm</p>
-                              <button onClick={lowerlegs} className='btn-course font-style'>See Legs Exercises</button>
+                              <button onClick={lowerlegs} className='btn-course btn-shadow font-style'>See Legs Exercises</button>
                          </div>
                     </div>
                     <div className="same-body neck">
@@ -120,7 +128,7 @@ const Course = () => {
                               <span className='font-style' ><b>Exercise Name </b>:Waist</span>
                               <p className='font-style' >Trainer :Pankaj Jaiswal</p>
                               <p className='font-style'> <span style={{ margin: "10px 5px 0px 0px " }}>< BiTime style={{ color: "red" }} /></span>Monday-Tuesday : 7am-12pm</p>
-                              <button onClick={waist} className='btn-course font-style'>See Waist Exercises</button>
+                              <button onClick={waist} className='btn-course btn-shadow font-style'>See Waist Exercises</button>
                          </div>
                     </div>
                     <div className="same-body shoulders">
@@ -130,7 +138,7 @@ const Course = () => {
                               <span  className='font-style'><b>Exercise Name </b>:Shoulders</span>
                               <p className='font-style' >Trainer :Pankaj Jaiswal</p>
                               <p className='font-style'> <span style={{ margin: "10px 5px 0px 0px " }}>< BiTime style={{ color: "red" }} /></span>Monday-Tuesday : 7am-12pm</p>
-                              <button onClick={shoulders} className='btn-course font-style'>See Shoulders Exercises</button>
+                              <button onClick={shoulders} className='btn-course btn-shadow font-style'>See Shoulders Exercises</button>
                          </div>
                     </div>
                     <div className="same-body upperarms">
@@ -139,7 +147,7 @@ const Course = () => {
                               <span className='font-style' ><b>Exercise Name </b>:Upper arms</span>
                               <p className='font-style' >Trainer :Pankaj Jaiswal</p>
                               <p className='font-style'> <span style={{ margin: "10px 5px 0px 0px " }}>< BiTime style={{ color: "red" }} /></span>Monday-Tuesday : 7am-12pm</p>
-                              <button onClick={upperarms} className='btn-course font-style'>See Upper-Arms Exercises</button>
+                              <button onClick={upperarms} className='btn-course btn-shadow font-style'>See Upper-Arms Exercises</button>
                          </div>
                     </div>
                     <div className="same-body upper legs">
@@ -148,7 +156,7 @@ const Course = () => {
                               <span className='font-style'><b>Exercise Name </b>:Upper legs</span>
                               <p className='font-style'>Trainer :Pankaj Jaiswal</p>
                               <p className='font-style'> <span style={{ margin: "10px 5px 0px 0px " }}>< BiTime style={{ color: "red" }} /></span>Monday-Tuesday : 7am-12pm</p>
-                              <button onClick={upperlegs} className='btn-course font-style'>See Upper-Legs Exercises</button>
+                              <button onClick={upperlegs} className='btn-course btn-shadow font-style'>See Upper-Legs Exercises</button>
                          </div>
                     </div>
                </div>

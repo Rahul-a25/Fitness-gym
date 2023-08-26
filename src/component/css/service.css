@@ -1,13 +1,20 @@
 .service-container{
     width: 80%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin: 20px auto;
 }
+/* .main-container{
+
+} */
 .box{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 50px;
-    margin-left: 40px;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    margin: 50px auto;
+    /* border:2px solid #f39c12; */
+    width: 100%;
     /* position: absolute;
     left: 0;
     top: 0; */
@@ -16,9 +23,9 @@
 
 }
 .box .same {
-    width: 350px ;
+    width: 400px ;
     height: 350px;
-    border: 2px solid slateblue;
+    /* border: 2px solid slateblue; */
     position: relative;
     overflow: hidden;
  
@@ -31,8 +38,9 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #EA5455;
-    background-image: linear-gradient(90deg, #FEB692 0%, #EA5455 100%);
+    background-color: #ff4757;
+    /* background-image: linear-gradient(90deg, #FEB692 0%, #EA5455 100%); */
+    background: linear-gradient(90deg, #ff4757 0%, #F597BC 100%);
     
     /* #FEB692
 #EA5455 */
@@ -47,16 +55,20 @@
     cursor: pointer;
     
 }
-.weight{
+.box .same:hover .hover-color{
+    color: white;
+}
+/* .weight{
     border: 2px solid red;
 }
 .cycle{
     border: 2px solid gray;
-}
+} */
 
 .center-same{
-   
-    margin-top: 50px;
+    
+    margin: 50px auto;
+    width: 70%;
    
 }
 .center-same h1{

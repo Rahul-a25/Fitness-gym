@@ -79,7 +79,12 @@
 }
 .pankaj .icon .same{
     border: 1px solid #a4b0be;
-    padding: 10px 10px;
+   
+    padding: 10px 12px;
     font-size: 20px;
     margin-left: 20px;
+    
+}
+.pankaj .icon .same:hover{
+    background: linear-gradient(90deg, #ff4757 0%, #F597BC 100%);
 }
