@@ -69,4 +69,35 @@ export const Waist=(Data)=>{
         payload:Data
     }
 }
+export const singleData=(Data)=>{
+    return{
+        type:"singleData",
+        payload:Data
+    }
+}
+export const favourite=(Data)=>{
+   return {
+    type:"addfavourite",
+    payload:Data
+   }
+} 
+export const BgColor=(color,Data)=>{
+    return{
+        type:'addcolor',
+        payload:color,
+        Data:Data
+    }
+}
+export const search=(Data)=>{
+  return {
+    type:"search",
+    payload:Data
+  }
+}
+export const DeleteAction=(Data)=>{
+  return {
+    type:"del",
+    payload:Data
+  }
+}
 

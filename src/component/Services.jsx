@@ -5,6 +5,7 @@ import { GrYoga } from "react-icons/gr";
 import { BiCycling } from "react-icons/bi";
 import { IoIosBody } from "react-icons/io";
 import {TbYoga} from "react-icons/tb";
+import { MdOutlineSportsGymnastics} from "react-icons/md";
 const Services = () => {
   return (
     <div className='service-container'>
@@ -29,7 +30,7 @@ const Services = () => {
         </div>
         <div className='yoga same'>
           <div className='center-same'>
-            <span><GrYoga className='icon-wala hover-color'/></span>
+            <span>< TbYoga  className='icon-wala hover-color'/></span>
             <h1 className='font-style hover-color'>YOGA MEDIDATION</h1>
             <p className='font-style font-color hover-color'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit ipsa saepe placeat ducimus illum enim eligendi veniam nam reiciendis minima!</p>
           </div>
@@ -61,7 +62,7 @@ const Services = () => {
         </div>
         <div className='fitness same'>
           <div className='center-same'>
-            <span><TbYoga className='icon-wala hover-color'/></span>
+            <span>< MdOutlineSportsGymnastics className='icon-wala hover-color'/></span>
             <h1 className='font-style hover-color'>FITNESS</h1>
             <p className='font-style hover-color font-color'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit ipsa saepe placeat ducimus illum enim eligendi veniam nam reiciendis minima!</p>
           </div>

@@ -51,3 +51,23 @@ font-family: 'Varela Round', sans-serif;
   font-size: 25px;
   font-weight: 400;
 }
+a{
+  text-decoration: none;
+}
+
+.button {
+  color: #ecf0f1;
+  font-size: 17px;
+  background-color: #F597BC ;
+  border: 1px solid #F597BC ;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0px 6px 0px #F597BC ;
+  transition: all .1s;
+ }
+ 
+ .button:active {
+  box-shadow: 0px 2px 0px #F597BC ;
+  position: relative;
+  top: 2px;
+ }

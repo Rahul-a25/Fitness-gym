@@ -10,19 +10,34 @@
     padding: 15px;
     position: fixed;
     z-index: 30;
+
   
 }
+
 .container .same a{
    text-decoration: none;
-   /* margin: 0px 40px; */
    font-size: 18px;
    color: white;
+
+}
+/* .heart-div{
+    border: 2px solid red;
+
+} */
+.heart-wala{
+    font-size: 25px;
+    margin: 0px 40px;
+    text-align: center;
+    align-items: center;
+    
+    
 }
 .container .same a:hover{
     color: #ff4757;
 }
 .container .nav-wala{
-    margin: 0px 40px;
+    margin: 0px 20px;
+    
 }
 .left{
     margin-left: 50px;
@@ -82,7 +97,7 @@
     position: absolute;
     top: 0px;
     margin-top: 50px;
-    left: 820px;
+    left: 645px;
     margin-left: 35px;
     background: #1c1c1c;
 }

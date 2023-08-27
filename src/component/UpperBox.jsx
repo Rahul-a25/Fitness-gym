@@ -17,7 +17,7 @@ const UpperBox = () => {
             <h1  style={{color:"white"}}> <span className='font-style'>STEP UP YOUR</span> <br /><span className='color font-style'>FITNESS CHALLENGE</span> <br /><span className='font-style'>With US</span></h1>
             </div>
              <div style={{marginRight:"570px"}} className="btn-wala-content">
-                <button className='btn btn-main font-style'>JOIN US</button>
+                <button className='btn btn-main font-style button'>JOIN US</button>
              </div>
         </div>
 

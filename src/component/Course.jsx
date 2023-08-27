@@ -7,7 +7,6 @@ import img2 from '../Assest/course-img2.jpg'
 import { BiTime } from "react-icons/bi";
 import { useNavigate } from 'react-router-dom'
 import Footer from './Footer'
-import { mycontext } from './context/context'
 import { useDispatch, useSelector } from 'react-redux'
 import { Body,Cardio, Chest, LowerArms, Lowerlegs, Shoulders, UpperArms, Upperlegs, Waist } from './Redux/action'
 // import UpperLegs from './BodyParts/UpperLegs'
@@ -81,54 +80,54 @@ const Course = () => {
                          <img src={img1} alt="" />
                          <div className="content">
                               <span className='font-style'><b>Exercise Name </b>:Back</span>
-                              <p className='font-style' >Trainer :Pankaj Jaiswal</p>
+                              <p className='font-style' >Trainer : <span className='color'>Pankaj Jaiswal</span> </p>
                               <p className='font-style'> <span style={{ margin: "10px 5px 0px 0px " }}>< BiTime style={{ color: "red" }} /></span>Monday-Tuesday : 7am-12pm</p>
-                              <button onClick={back} className='btn-course btn-shadow font-style'>See Back Exercises</button>
+                              <button onClick={back} className='btn-course button btn-shadow font-style'>See Back Exercises</button>
                          </div>
                     </div>
                     <div className="same-body cardio">
                          <img src={img2} alt="" />
                          <div className="content">
                               <span className='font-style' ><b>Exercise Name </b>:Cardio</span>
-                              <p className='font-style' >Trainer :Pankaj Jaiswal</p>
+                              <p className='font-style' >Trainer :<span className='color'>Pankaj Jaiswal</span> </p>
                               <p className='font-style'> <span style={{ margin: "10px 5px 0px 0px " }}>< BiTime style={{ color: "red" }} /></span>Monday-Tuesday : 7am-12pm</p>
-                              <button onClick={cardio} className='btn-course btn-shadow font-style'>See Cardio Exercises</button>
+                              <button onClick={cardio} className='btn-course button  btn-shadow font-style'>See Cardio Exercises</button>
                          </div>
                     </div>
                     <div className="same-body chest">
                          <img src={img2} alt="" />
                          <div className="content">
                               <span className='font-style' ><b>Exercise Name </b>:Chest</span>
-                              <p className='font-style' >Trainer :Pankaj Jaiswal</p>
+                              <p className='font-style' >Trainer :<span className='color'>Pankaj Jaiswal</span> </p>
                               <p className='font-style'> <span style={{ margin: "10px 5px 0px 0px " }}>< BiTime style={{ color: "red" }} /></span>Monday-Tuesday : 7am-12pm</p>
-                              <button onClick={chest} className='btn-course btn-shadow font-style'>See Chest Exercises</button>
+                              <button onClick={chest} className='btn-course button  btn-shadow font-style'>See Chest Exercises</button>
                          </div>
                     </div>
                     <div className="same-body lowerarms">
                          <img src={img2} alt="" />
                          <div className="content">
                               <span className='font-style' ><b>Exercise Name </b>:Lower arms</span>
-                              <p className='font-style' >Trainer :Pankaj Jaiswal</p>
+                              <p className='font-style' >Trainer :<span className='color'>Pankaj Jaiswal</span> </p>
                               <p className='font-style'> <span style={{ margin: "10px 5px 0px 0px " }}>< BiTime style={{ color: "red" }} /></span>Monday-Tuesday : 7am-12pm</p>
-                              <button onClick={lowerarms} className='btn-course btn-shadow font-style'>See Lower-Arms Exercises</button>
+                              <button onClick={lowerarms} className='btn-course button  btn-shadow font-style'>See Lower-Arms Exercises</button>
                          </div>
                     </div>
                     <div className="same-body lowerlegs">
                          <img src={img2} alt="" />
                          <div className="content">
                               <span  className='font-style'><b>Exercise Name </b>:Lower legs</span>
-                              <p className='font-style' >Trainer :Pankaj Jaiswal</p>
+                              <p className='font-style' >Trainer :<span className='color'>Pankaj Jaiswal</span> </p>
                               <p className='font-style'> <span style={{ margin: "10px 5px 0px 0px " }}>< BiTime style={{ color: "red" }} /></span>Monday-Tuesday : 7am-12pm</p>
-                              <button onClick={lowerlegs} className='btn-course btn-shadow font-style'>See Legs Exercises</button>
+                              <button onClick={lowerlegs} className='btn-course button  btn-shadow font-style'>See Legs Exercises</button>
                          </div>
                     </div>
                     <div className="same-body neck">
                          <img src={img2} alt="" />
                          <div className="content">
                               <span className='font-style' ><b>Exercise Name </b>:Waist</span>
-                              <p className='font-style' >Trainer :Pankaj Jaiswal</p>
+                              <p className='font-style' >Trainer :<span className='color'>Pankaj Jaiswal</span> </p>
                               <p className='font-style'> <span style={{ margin: "10px 5px 0px 0px " }}>< BiTime style={{ color: "red" }} /></span>Monday-Tuesday : 7am-12pm</p>
-                              <button onClick={waist} className='btn-course btn-shadow font-style'>See Waist Exercises</button>
+                              <button onClick={waist} className='btn-course button  btn-shadow font-style'>See Waist Exercises</button>
                          </div>
                     </div>
                     <div className="same-body shoulders">
@@ -136,27 +135,27 @@ const Course = () => {
                          <img src={img2} alt="" />
                          <div className="content">
                               <span  className='font-style'><b>Exercise Name </b>:Shoulders</span>
-                              <p className='font-style' >Trainer :Pankaj Jaiswal</p>
+                              <p className='font-style' >Trainer :<span className='color'>Pankaj Jaiswal</span> </p>
                               <p className='font-style'> <span style={{ margin: "10px 5px 0px 0px " }}>< BiTime style={{ color: "red" }} /></span>Monday-Tuesday : 7am-12pm</p>
-                              <button onClick={shoulders} className='btn-course btn-shadow font-style'>See Shoulders Exercises</button>
+                              <button onClick={shoulders} className='btn-course button  btn-shadow font-style'>See Shoulders Exercises</button>
                          </div>
                     </div>
                     <div className="same-body upperarms">
                          <img src={img2} alt="" />
                          <div className="content">
                               <span className='font-style' ><b>Exercise Name </b>:Upper arms</span>
-                              <p className='font-style' >Trainer :Pankaj Jaiswal</p>
+                              <p className='font-style' >Trainer <span className='color'>Pankaj Jaiswal</span> </p>
                               <p className='font-style'> <span style={{ margin: "10px 5px 0px 0px " }}>< BiTime style={{ color: "red" }} /></span>Monday-Tuesday : 7am-12pm</p>
-                              <button onClick={upperarms} className='btn-course btn-shadow font-style'>See Upper-Arms Exercises</button>
+                              <button onClick={upperarms} className='btn-course button  btn-shadow font-style'>See Upper-Arms Exercises</button>
                          </div>
                     </div>
                     <div className="same-body upper legs">
                          <img src={img2} alt="" />
                          <div className="content">
                               <span className='font-style'><b>Exercise Name </b>:Upper legs</span>
-                              <p className='font-style'>Trainer :Pankaj Jaiswal</p>
+                              <p className='font-style'>Trainer :<span className='color'>Pankaj Jaiswal</span> </p>
                               <p className='font-style'> <span style={{ margin: "10px 5px 0px 0px " }}>< BiTime style={{ color: "red" }} /></span>Monday-Tuesday : 7am-12pm</p>
-                              <button onClick={upperlegs} className='btn-course btn-shadow font-style'>See Upper-Legs Exercises</button>
+                              <button onClick={upperlegs} className='btn-course button  btn-shadow font-style'>See Upper-Legs Exercises</button>
                          </div>
                     </div>
                </div>

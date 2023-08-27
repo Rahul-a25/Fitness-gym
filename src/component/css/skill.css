@@ -1,5 +1,4 @@
 .skill-container{
-  
     width: 80%;
     margin: 30px auto;
     display: flex;
@@ -11,13 +10,15 @@
     height: 300px;
 
 }
-.content-wala{
+.content-wala-skill{
     
     width: 50%;
     text-align: start;
     margin-bottom: 20px;
+    margin-left: 20px;
+    
 }
-.content-wala .span-wala {
+.content-wala-skill .span-wala {
 line-height: 1.8;
 margin-top: 10px;
 word-wrap: break-word;

@@ -16,6 +16,8 @@ import LowerLegs from './component/BodyParts/LowerLegs';
 import Waist from './component/BodyParts/Waist';
 import Contact from './component/Contact';
 import About from './component/About';
+import SingleExercise from './component/SingleExercise';
+import FavouriteExer from './component/FavouriteExer';
 
 
 
@@ -40,6 +42,8 @@ function App() {
         <Route path='/lowerlegs' element={<LowerLegs/>}/>
         <Route path='/waist' element={<Waist/>}/>
         <Route path='/contact' element={<Contact/>}/>
+        <Route path='/singleExercise/:id' element={<SingleExercise/>}/>
+        <Route path='/favouriteExercise' element={<FavouriteExer/>}/>
       </Routes>
       
       {/* <Course/> */}

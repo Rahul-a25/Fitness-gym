@@ -1,0 +1,42 @@
+.gym-detail-container{
+    width:85%;
+    margin: 80px auto;
+    display: flex;
+}
+.img-wala{
+    /* border: 2px solid blue; */
+    width: 50%;
+    height: 100%;
+}
+.img-wala img{
+    /* border: 2px solid rgb(255, 0, 200); */
+    width: 100%;
+    height: 100%;
+}
+.content-wala-part{
+    /* border: 2px solid gold; */
+    width: 60%;
+    margin-top: 150px;
+}
+.content-wala-part h1{
+    text-align: start;
+    margin-top: 100px;
+    /* border: 2px solid hotpink; */
+    margin: 0;
+}
+.lower-content{
+    display: flex;
+    flex-direction: column;
+
+}
+.lower-content span{
+    font-size: 50px;
+    text-align: start;
+    margin-top: 10px;
+    margin: 0;
+    font-weight: 200;
+}
+.button-wala{
+    margin-right: 550px;
+    margin-top: 15px;
+}

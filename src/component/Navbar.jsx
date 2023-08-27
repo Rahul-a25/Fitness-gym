@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import './css/navbar.css'
 import { Body,Cardio, Chest, LowerArms, Lowerlegs, Shoulders, UpperArms, Upperlegs, Waist } from './Redux/action'
 import { useDispatch, useSelector } from 'react-redux'
+import { AiTwotoneHeart} from "react-icons/ai";
 const Navbar = () => {
   const dispatch=useDispatch()
   const navigate = useNavigate()
@@ -71,7 +72,13 @@ const waist=()=>{
          </ul>
     </div>
             </Link>
-            <Link to='/contact' className='font font-style'>Contact</Link>
+            <Link to='/contact' className='font font-style nav-wala'>Contact</Link>
+            
+            <Link className='heart-div font nav-wala font-style'  to='/favouriteExercise' >
+                {/* <AiTwotoneHeart  className='heart-wala '/> */}
+                Favourite-Exercise
+            </Link>
+        
             
         </div>
         <div className="same right">

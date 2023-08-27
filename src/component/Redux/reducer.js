@@ -1,6 +1,10 @@
 const initial={
      AllData:[],
-     FilterData:[]
+     FilterData:[],
+     SingleData:[],
+     AddToFavourite:[],
+     AddColor:"black",
+
 }
 const myreducer=(state=initial,action)=>{
     switch(action.type){
@@ -69,7 +73,101 @@ const myreducer=(state=initial,action)=>{
                 ...state,
                 AllData:state.FilterData.filter((e)=>e.bodyPart==='waist')
             }
-            break
+            break;
+            case 'singleData':
+                state={
+                    ...state,
+                    SingleData:action.payload
+                }
+                break;
+                case 'addfavourite':
+                    // const existingItem = state.AddToFavourite.find((item) => item.id === action.payload.id);
+                    // if(existingItem){
+                      return{
+                        ...state,
+                        // AddToFavourite:state.AddToFavourite.map((item) =>
+                        //         item.id === action.payload.id ? { ...item, qty: item.qty + 1 } : item),
+                        AddToFavourite:[...state.AddToFavourite,action.payload]
+                         
+                      }
+                     
+                    // }
+                    // else{
+                    //   return{
+                    //     ...state,
+                    //     // updated
+                    //    AddToFavourite: [...state.AddToFavourite, {...action.payload,qty:1}],
+                    //   }
+                //   }
+        
+                    // const existingItem = state.AddToFavourite.find((item) => item.id === action.payload.id);
+                    //     if(existingItem){
+                    //       return{
+                    //         ...state,
+                    //         AddToFavourite:state.AddToFavourite.map((item) =>
+                    //                 item.id === action.payload.id ? item: item),
+                    //         AddColor:state.AddColor
+                            
+                    //       }
+                         
+                    //     }
+                    //     else{
+                    //       return{
+                    //         ...state,
+                    //         // updated
+                    //        AddToFavourite: [...state.AddToFavourite,action.payload],
+                    //        AddColor:'#ff4757'
+                    //       }}
+                    break
+                    // case 'addcolor':
+                    //     // const sameId=state.AddToFavourite.find((item)=>item.id===action.payload.id)
+                    //     // if(sameId){
+                    //         const sameitem = state.AddToFavourite.find((item) => item.id === action.payload.id);
+                    //         if(sameitem ){
+                    //           return{
+                    //             ...state,
+                    //             // AddToFavourite:state.AddToFavourite.map((item) =>
+                    //             //         item.id === action.payload.id ? item: item),
+                    //             AddColor:action.payload
+                                
+                    //           }
+                             
+                    //         }
+                    //         else{
+                    //           return{
+                    //             ...state,
+                    //             // updated
+                    //         //    AddToFavourite: [...state.AddToFavourite, {...action.payload}],
+                    //            AddColor:'#ff4757'
+                    //           }}
+                            if(state.AddColor==='#ff4757'){
+                                return{
+                                   ...state,
+                                   AddColor:action.payload
+                                }
+                            }
+                            else{
+                                return{
+                                    ...state,
+                                    AddColor:'#ff4757'
+                                }
+                            }
+                        break
+                        case 'search':
+                state={
+                    ...state,
+                    
+                    AllData:state.FilterData.filter((e)=>e.bodyPart.toLowerCase().includes(action.payload)),
+                    // AllData:state.FilterData.filter((e)=>e.target.toLowerCase().includes(action.payload)),
+                    // AllData:state.FilterData.filter((e)=>e.equipment.toLowerCase().includes(action.payload)),
+                }
+                break;
+                case 'del':
+                    state={
+                        ...state,
+                        AddToFavourite:state.AddToFavourite.filter((id)=>action.payload!=id)
+                    }
+                    break;
     }
     return state
 }
