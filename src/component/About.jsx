@@ -7,6 +7,9 @@ import pankajimg1 from '../Assest/Pankaj-photo-2.jpg'
 import pankaj2 from '../Assest/Pankaj-photo.jpg'
 import { CgGym  } from "react-icons/cg";
 import Footer from './Footer'
+import { MdSportsGymnastics,MdOutlinePayment} from "react-icons/md";
+import { AiFillLike } from "react-icons/ai";
+import { FaWarehouse } from "react-icons/fa";
 const About = () => {
     const navigate=useNavigate()
   return (
@@ -40,7 +43,7 @@ const About = () => {
                         <h1 className='font-style font-color'>Pankaj jaiswal</h1>
                         <p className='font-style'>HAVING <span className='color'>10 YEARS</span> OF EXPERIENCE IN FITNESS</p>
                         <span className='font-style span font-color'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in.</span> <br />
-                        <button className='font-style btn-about btn-shadow btn button'>Service</button>
+                        <button onClick={()=>navigate('/exercise')} className='font-style btn-about btn-shadow btn button'>Service</button>
                      </div>
                </div>
 
@@ -57,36 +60,43 @@ const About = () => {
                     </div>
                     <div className='same-box-about div-color-hover '>
                     <div className="content-part">
-                              <span className='icon-wala icon-white'>icon</span>
+                              <span className='icon-wala icon-white'><MdSportsGymnastics/></span>
                               <p className='about-name font-style'>PROFFESIONAL TRAINER</p>
                               <p className='font-size-wala font-style'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt libero quos quia nostrum harum odio quo explicabo sapiente tempora quisquam?.</p>
                          </div>
                     </div>
                     <div className='same-box-about div-color'>
                     <div className="content-part">
-                              <span className='icon-wala white'>icon</span>
+                              <span className='icon-wala white'>
+                              <svg className='' xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-apple" width="100" height="100" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M12 14m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+   <path d="M12 11v-6a2 2 0 0 1 2 -2h2v1a2 2 0 0 1 -2 2h-2"></path>
+   <path d="M10 10.5c1.333 .667 2.667 .667 4 0"></path>
+</svg>
+                              </span>
                               <p className='about-name white font-style'>HEALTHY DIET PLAN</p>
                               <p className='font-size-wala white font-style'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo vel officia eveniet officiis modi nulla et ipsa? Velit, neque quidem?.</p>
                          </div>
                     </div>
                     <div className='same-box-about div-color-hover '>
                     <div className="content-part">
-                              <span className='icon-wala icon-white'>icon</span>
-                              <p className='about-name font-style'>EQUIPMENT</p>
+                              <span className='icon-wala icon-white'><AiFillLike/></span>
+                              <p className='about-name font-style'>24/7 HELPING PEOPLE</p>
                               <p className='font-size-wala font-style'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia neque dolor corrupti possimus laborum quasi delectus? Officiis reiciendis aperiam odio?.</p>
                          </div>
                     </div>
                     <div className='same-box-about div-color'>
                     <div className="content-part">
-                              <span className='icon-wala white'>icon</span>
-                              <p className='about-name white font-style'>EQUIPMENT</p>
+                              <span className='icon-wala white'><FaWarehouse/></span>
+                              <p className='about-name white font-style'>UNIQUE TO YOUR NEEDS</p>
                               <p className='font-size-wala white font-style'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, maxime eius. Minus eaque illum, eum corporis doloremque reprehenderit deleniti aliquid?.</p>
                          </div>
                     </div>
                     <div className='same-box-about div-color-hover '>
                     <div className="content-part">
-                              <span className='icon-wala icon-white'>icon</span>
-                              <p className='about-name font-style'>EQUIPMENT</p>
+                              <span className='icon-wala icon-white'><MdOutlinePayment/></span>
+                              <p className='about-name font-style'>ONLINE PAYMENT</p>
                               <p className='font-size-wala font-style'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In distinctio tempora ipsam dolore rem consequatur eveniet iure eius accusamus et.</p>
                          </div>
                     </div>
