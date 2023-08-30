@@ -27,6 +27,7 @@ const Back = () => {
       return storeData.AllData
     })
    
+   
   return (
     <div>
            <div className='img' style={{   backgroundImage: `url(${bg})`, backgroundSize: 'cover',

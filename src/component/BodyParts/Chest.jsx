@@ -8,6 +8,7 @@ import { useDispatch } from 'react-redux'
 import { favourite } from '../Redux/action'
 import { singleData } from '../Redux/action'
 import { Link } from 'react-router-dom'
+
 const Chest = () => {
     const navigate=useNavigate()
     const dispatch=useDispatch()

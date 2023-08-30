@@ -44,7 +44,7 @@ const Contact = () => {
                          <textarea placeholder='Message' className='font-style' name="" id="" cols="30" rows="10"></textarea>
                     </div>
                     <div className="btn">
-                        <button style={{backgroundColor:"#ff4757"}} className='font-style'>SEND MESSAGE</button>
+                        <button  className='font-style button'>SEND MESSAGE</button>
                     </div>
 
 

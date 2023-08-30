@@ -46,9 +46,10 @@
 
 
 
-button {
+#mybtn{
     width: 150px;
     height: 50px;
+    margin-top: 10px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -59,17 +60,17 @@ button {
     background: #e62222;
    }
    
-   button, button span {
+   #mybtn, #mybtn span {
     transition: 200ms;
    }
    
-   button .text {
+   #mybtn .text {
     transform: translateX(35px);
     color: white;
     font-weight: bold;
    }
    
-   button .icon {
+   #mybtn .icon {
     position: absolute;
     border-left: 1px solid #c41b1b;
     transform: translateX(110px);
@@ -80,29 +81,29 @@ button {
     justify-content: center;
    }
    
-   button svg {
+   #mybtn svg {
     width: 15px;
     fill: #eee;
    }
    
-   button:hover {
+   #mybtn:hover {
     background: #ff3636;
    }
    
-   button:hover .text {
+   #mybtn:hover .text {
     color: transparent;
    }
    
-   button:hover .icon {
+   #mybtn:hover .icon {
     width: 150px;
     border-left: none;
     transform: translateX(0);
    }
    
-   button:focus {
+   #mybtn:focus {
     outline: none;
    }
    
-   button:active .icon svg {
+   #mybtn:active .icon svg {
     transform: scale(0.8);
    }

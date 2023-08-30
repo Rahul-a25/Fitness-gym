@@ -52,7 +52,7 @@ const ALLExercise = () => {
           {/* navigate-wala-part */}
           <div className="navigate-wala">
               <div className="navigate">
-              <p onClick={()=>navigate('/')} className='navigate-home font-style'>HOME</p> <b >|</b><p style={{marginLeft:"20px",fontSize:"20px",color:"#ff7f50"}} className='font-style'>EXERCISES PART</p>
+              <p onClick={()=>navigate('/')} className='navigate-home font-style'>HOME</p> <b >|</b><p style={{marginLeft:"20px",fontSize:"20px"}} className='font-style color'>EXERCISES PART</p>
               </div>
               <h1 style={{color:"white",fontSize:"60px",margin:"0"}} className='font-style'>EXERCISES</h1>
           </div>

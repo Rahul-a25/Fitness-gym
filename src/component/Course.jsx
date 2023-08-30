@@ -4,7 +4,16 @@ import './css/course.css'
 import Navbar from './Navbar'
 import img1 from '../Assest/course-img1.jpg'
 import img2 from '../Assest/course-img2.jpg'
+import photo1 from '../Assest/photo1.webp'
+import photo2 from '../Assest/photo2.jpg'
+import photo3 from '../Assest/photo3.webp'
 import { BiTime } from "react-icons/bi";
+import waistphoto from '../Assest/waist.jpg'
+import shouldersphoto from '../Assest/shoulders.webp'
+import upperlegsphoto from '../Assest/upperlegs.webp'
+import upperarmsphoto from '../Assest/upperarms.jpg'
+import chestphoto from '../Assest/chest.jpg'
+import backphoto from '../Assest/back.jpg'
 import { useNavigate } from 'react-router-dom'
 import Footer from './Footer'
 import { useDispatch, useSelector } from 'react-redux'
@@ -77,7 +86,7 @@ const Course = () => {
                <div className="body-parts">
 
                     <div className="same-body back">
-                         <img src={img1} alt="" />
+                         <img src={backphoto} alt="" />
                          <div className="content">
                               <span className='font-style'><b>Exercise Name </b>:Back</span>
                               <p className='font-style' >Trainer : <span className='color'>Pankaj Jaiswal</span> </p>
@@ -86,7 +95,7 @@ const Course = () => {
                          </div>
                     </div>
                     <div className="same-body cardio">
-                         <img src={img2} alt="" />
+                         <img src={photo1} alt="" />
                          <div className="content">
                               <span className='font-style' ><b>Exercise Name </b>:Cardio</span>
                               <p className='font-style' >Trainer :<span className='color'>Pankaj Jaiswal</span> </p>
@@ -95,7 +104,7 @@ const Course = () => {
                          </div>
                     </div>
                     <div className="same-body chest">
-                         <img src={img2} alt="" />
+                         <img src={chestphoto} alt="" />
                          <div className="content">
                               <span className='font-style' ><b>Exercise Name </b>:Chest</span>
                               <p className='font-style' >Trainer :<span className='color'>Pankaj Jaiswal</span> </p>
@@ -104,7 +113,7 @@ const Course = () => {
                          </div>
                     </div>
                     <div className="same-body lowerarms">
-                         <img src={img2} alt="" />
+                         <img src={photo2} alt="" />
                          <div className="content">
                               <span className='font-style' ><b>Exercise Name </b>:Lower arms</span>
                               <p className='font-style' >Trainer :<span className='color'>Pankaj Jaiswal</span> </p>
@@ -113,7 +122,7 @@ const Course = () => {
                          </div>
                     </div>
                     <div className="same-body lowerlegs">
-                         <img src={img2} alt="" />
+                         <img src={photo3} alt="" />
                          <div className="content">
                               <span  className='font-style'><b>Exercise Name </b>:Lower legs</span>
                               <p className='font-style' >Trainer :<span className='color'>Pankaj Jaiswal</span> </p>
@@ -122,7 +131,7 @@ const Course = () => {
                          </div>
                     </div>
                     <div className="same-body neck">
-                         <img src={img2} alt="" />
+                         <img src={waistphoto} alt="" />
                          <div className="content">
                               <span className='font-style' ><b>Exercise Name </b>:Waist</span>
                               <p className='font-style' >Trainer :<span className='color'>Pankaj Jaiswal</span> </p>
@@ -132,7 +141,7 @@ const Course = () => {
                     </div>
                     <div className="same-body shoulders">
                          {/* shoulders */}
-                         <img src={img2} alt="" />
+                         <img src={shouldersphoto} alt="" />
                          <div className="content">
                               <span  className='font-style'><b>Exercise Name </b>:Shoulders</span>
                               <p className='font-style' >Trainer :<span className='color'>Pankaj Jaiswal</span> </p>
@@ -141,7 +150,7 @@ const Course = () => {
                          </div>
                     </div>
                     <div className="same-body upperarms">
-                         <img src={img2} alt="" />
+                         <img src={upperarmsphoto} alt="" />
                          <div className="content">
                               <span className='font-style' ><b>Exercise Name </b>:Upper arms</span>
                               <p className='font-style' >Trainer <span className='color'>Pankaj Jaiswal</span> </p>
@@ -150,7 +159,7 @@ const Course = () => {
                          </div>
                     </div>
                     <div className="same-body upper legs">
-                         <img src={img2} alt="" />
+                         <img src={upperlegsphoto} alt="" />
                          <div className="content">
                               <span className='font-style'><b>Exercise Name </b>:Upper legs</span>
                               <p className='font-style'>Trainer :<span className='color'>Pankaj Jaiswal</span> </p>

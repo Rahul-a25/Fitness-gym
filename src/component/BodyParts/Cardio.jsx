@@ -21,6 +21,7 @@ const Cardio = () => {
    const favouritefn=(e)=>{
      dispatch(favourite(e))
    }
+
   return (
     <div>  
             <div className='img' style={{   backgroundImage: `url(${bg})`, backgroundSize: 'cover',
