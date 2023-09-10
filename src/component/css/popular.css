@@ -31,3 +31,21 @@
 .text-shadow-popular{
     text-shadow: 6px 4px 4px #F597BC;
 }
+@media screen and (max-width: 760px){
+    .popular-container{
+        width: 100%;
+        border: 2px solid black;
+    }
+    .popular-card{
+        display: flex;
+        flex-direction: column;
+        border: 2px solid red;
+        width: 100%;
+    }
+    .card{
+        margin: auto;
+        margin-top: 20px;
+        width: 500px;
+        padding: 0;
+    }
+}

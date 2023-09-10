@@ -35,3 +35,28 @@ color:#757778
     cursor: pointer;
 
 }
+@media screen and (max-width: 760px){
+    .skill-container{
+    
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .skill-container .img-wala{
+        width: 80%;
+        height: 400px;
+        margin-top: 30px;
+    }
+    .skill-container .media-query-img{
+         width: 100%;
+    }
+    .content-wala-skill {
+        width: 80%;
+        padding: 20px;
+    }
+    .media-query-btn-skill{
+       margin-top: 10px ;
+       margin-left: 160px;
+    }
+}

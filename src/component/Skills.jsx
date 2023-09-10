@@ -7,7 +7,7 @@ const Skills = () => {
     return (
         <div className='skill-container' >
             <div className='img-wala'>
-                <img src={image} alt="" />
+                <img className='media-query-img' src={image} alt="" />
             </div>
             <div className='content-wala-skill'>
                 <h2 className='font-style' style={{fontSize:"30px"}}>
@@ -17,7 +17,7 @@ const Skills = () => {
                 <span className='font-style span-wala' >
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati similique nemo modi repellendus dolorum impedit pariatur dignissimos velit temporibus! Dicta, assumenda. Veniam quam iusto deleniti, amet reprehenderit explicabo voluptatum et sed quasi, quas sit eum minus perferendis voluptates aspernatur. Provident unde facilis laborum repellendus quo sunt sed quam quibusdam rem.
                 </span> <br />
-                <button onClick={()=>navigate('/trainer')} className=' btn-content font-style button' >Learn More</button>
+                <button onClick={()=>navigate('/trainer')} className=' btn-content media-query-btn-skill font-style button' >Learn More</button>
             </div>
         </div>
     )

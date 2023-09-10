@@ -14,10 +14,10 @@ const UpperBox = () => {
         <div className='mid-content'>
             <div className='mid-text font'>
             <span style={{color:"white "}} className='font-style spanwala'>GYM FITNESS CLUB</span>
-            <h1  style={{color:"white"}}> <span className='font-style'>STEP UP YOUR</span> <br /><span className='color font-style'>FITNESS CHALLENGE</span> <br /><span className='font-style'>With US</span></h1>
+            <h1  className='query-style-upper-content' style={{color:"white"}}> <span className='font-style'>STEP UP YOUR</span> <br /><span className='color font-style'>FITNESS CHALLENGE</span> <br /><span className='font-style'>With US</span></h1>
             </div>
              <div style={{marginRight:"570px"}} className="btn-wala-content">
-                <button className='btn btn-main font-style button'>JOIN US</button>
+                <button className='btn btn-main font-style button query-btn-upper'>JOIN US</button>
              </div>
         </div>
 
